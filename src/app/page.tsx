@@ -1,91 +1,56 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+"use client";
 
-const inter = Inter({ subsets: ['latin'] })
+import Image from "next/image";
+import Layout from "./components/layout";
+import profilePic from "../../public/images/profile/developer-pic-1.png";
+import AnimatedText from "./components/animated-text";
+import Link from "next/link";
+import { LinkArrow } from "./components/icons";
+import HireMe from "./components/hire-me";
+import ligheBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    return (
+        <main className="flex items-center text-dark w-full min-h-screen">
+            <Layout className="pt-0">
+                <div className="flex items-center justify-between w-full">
+                    <div className="w-1/2">
+                        <Image src={profilePic} alt="BK" className="w-full h-auto" />
+                    </div>
+                    <div className="w-1/2 flex flex-col items-center self-center">
+                        <AnimatedText
+                            text="Turning Vision Into Reality With Code And Design."
+                            className="!text-6xl !text-left"
+                        />
+                        <p className="my-4 text-base font-medium">
+                            As a skilled full-stack developer, I am dedicated to turning ideas into innovative web
+                            applications. Explore my latest projects and articles, showcasing my expertise in React.js
+                            and web development.
+                        </p>
+                        <div className="flex items-center self-center mt-2">
+                            <Link
+                                href="/dummy.pdf"
+                                target={"_blank"}
+                                className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                                download={true}
+                            >
+                                Resume <LinkArrow className="w-6 ml-1" />
+                            </Link>
+                            <Link
+                                href="mailto:justinbk1412@gmail.com"
+                                target={"_blank"}
+                                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                            >
+                                Contract
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </Layout>
+            <HireMe />
+            <div className="absolute right-8 bottom-8 inline-block w-24">
+                <Image src={ligheBulb} alt="BK" className="w-full h-auto" />
+            </div>
+        </main>
+    );
 }
