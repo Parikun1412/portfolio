@@ -20,7 +20,7 @@ const AnimatedNumbers = ({ value }: Props) => {
 
     const motionValue = useMotionValue(0);
     const springValue = useSpring(motionValue, { duration: 3000 });
-    const isInView = useInView(ref, {once: true});
+    const isInView = useInView(ref, { once: true });
 
     useEffect(() => {
         if (isInView) {
