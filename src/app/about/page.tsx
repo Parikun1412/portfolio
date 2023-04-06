@@ -42,10 +42,6 @@ const AnimatedNumbers = ({ value }: Props) => {
 const About = () => {
     return (
         <>
-            <Head>
-                <title>Portfolio | About Page</title>
-                <meta name="description" content="any description" />
-            </Head>
             <main className="flex w-full flex-col items-center justify-center">
                 <Layout>
                     <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />

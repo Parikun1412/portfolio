@@ -5,11 +5,7 @@ export const metadata = {
 };
 
 const AboutLayout = () => {
-    return (
-        <>
-            <About />
-        </>
-    );
+    return <About />;
 };
 
 export default AboutLayout;
