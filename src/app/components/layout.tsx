@@ -1,16 +1,12 @@
-"use client"
+import React, { ReactNode } from "react";
 
-import React, { ReactNode } from 'react'
-
-interface Props{
+interface Props {
     children: ReactNode;
     className?: string;
 }
 
-const Layout = ({children, className=""}: Props) => {
-  return (
-    <div className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}>{children}</div>
-  )
-}
+const Layout = ({ children, className = "" }: Props) => {
+    return <div className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}>{children}</div>;
+};
 
-export default Layout
+export default Layout;

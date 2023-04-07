@@ -4,8 +4,8 @@ export const metadata = {
     title: "Projects Page",
 };
 
-const AboutLayout = () => {
+const ProjectsLayout = () => {
     return <Projects />;
 };
 
-export default AboutLayout;
+export default ProjectsLayout;
