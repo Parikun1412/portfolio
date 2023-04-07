@@ -20,7 +20,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="en">
             <body>
                 <Navbar />
-                <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>{children}</main>
+                <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>

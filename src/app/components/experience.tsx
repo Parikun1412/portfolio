@@ -19,11 +19,11 @@ const Details = ({ position, company, companyLink, time, address, work }: Props)
             <motion.div initial={{ y: 50 }} whileInView={{ y: 0 }} transition={{ duration: 0.5, text: "spring" }}>
                 <h3 className="capitalize font-bold text-2xl">
                     {position}&nbsp;
-                    <a href={companyLink} target="_blank" className="text-primary capitalize">
+                    <a href={companyLink} target="_blank" className="text-primary dark:text-primaryDark capitalize">
                         @{company}
                     </a>
                 </h3>
-                <span className="capitalize font-meduium text-dark/75">
+                <span className="capitalize font-meduium text-dark/75 dark:text-light/75">
                     {time} | {address}
                 </span>
                 <p className="font-medium w-full">{work}</p>
@@ -45,7 +45,7 @@ const Experience = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{ scaleY: scrollYProgress }}
-                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
                 />
                 <ul>
                     <Details
