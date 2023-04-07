@@ -11,6 +11,7 @@ import { motion, useMotionValue } from "framer-motion";
 import article3 from "../../../public/images/articles/create modal component in react using react portals.png";
 import article4 from "../../../public/images/articles/pagination component in reactjs.jpg";
 import article5 from "../../../public/images/articles/todo list app built using react redux and framer motion.png";
+import TransitionEffect from "../components/transition-effect";
 
 const FramerImage = motion(Image);
 
@@ -103,6 +104,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }: Props) => {
 const Articles = () => {
     return (
         <>
+        <TransitionEffect />
             <main className="w-full pb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
                 <Layout className="pt-16">
                     <AnimatedText

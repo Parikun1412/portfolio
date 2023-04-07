@@ -8,6 +8,7 @@ import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "../components/icons";
 import project1 from "../../../public/images/projects/crypto-screener-cover-image.jpg";
 import { motion } from "framer-motion";
+import TransitionEffect from "../components/transition-effect";
 
 interface Props {
     type: string;
@@ -93,76 +94,79 @@ const Project = ({ title, type, img, link, githublink }: Props) => {
 
 const Projects = () => {
     return (
-        <main className="w-full pb-16 flex flex-col items-center justify-center dark:text-light">
-            <Layout className="pt-16">
-                <AnimatedText
-                    text="Imagination Trumps Knowledge!"
-                    className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-                />
-                <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-                    <div className="col-span-12">
-                        <FeaturedProject
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
+        <>
+            <TransitionEffect />
+            <main className="w-full pb-16 flex flex-col items-center justify-center dark:text-light">
+                <Layout className="pt-16">
+                    <AnimatedText
+                        text="Imagination Trumps Knowledge!"
+                        className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+                    />
+                    <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
+                        <div className="col-span-12">
+                            <FeaturedProject
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
+                        <div className="col-span-6 sm:col-span-12">
+                            <Project
+                                type="Featured Project"
+                                title="Vu Kiet Food Website"
+                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                img={project1}
+                                link="/"
+                                githublink="/"
+                            />
+                        </div>
                     </div>
-                    <div className="col-span-6 sm:col-span-12">
-                        <Project
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
-                    </div>
-                    <div className="col-span-6 sm:col-span-12">
-                        <Project
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
-                    </div>
-                    <div className="col-span-12">
-                        <FeaturedProject
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
-                    </div>
-                    <div className="col-span-6 sm:col-span-12">
-                        <Project
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
-                    </div>
-                    <div className="col-span-6 sm:col-span-12">
-                        <Project
-                            type="Featured Project"
-                            title="Vu Kiet Food Website"
-                            summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
-                            img={project1}
-                            link="/"
-                            githublink="/"
-                        />
-                    </div>
-                </div>
-            </Layout>
-        </main>
+                </Layout>
+            </main>
+        </>
     );
 };
 
