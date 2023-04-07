@@ -42,12 +42,12 @@ const AnimatedNumbers = ({ value }: Props) => {
 const About = () => {
     return (
         <>
-            <main className="flex w-full flex-col items-center justify-center">
+            <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout>
                     <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
                     <div className="grid w-full grid-cols-8 gap-16">
                         <div className="col-span-3 flex flex-col items-start justify-start">
-                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">Biography</h2>
+                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
                                 Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a passion for creating
                                 beautiful, functional, and user-centered digital experiences. With 4 years of experience
@@ -73,7 +73,7 @@ const About = () => {
                                 <span className="inline-block text-7xl font-bold">
                                     <AnimatedNumbers value={50} />+
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-dark/75">satisfied clients</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">satisfied clients</h2>
                             </div>
                             <div className="flex flex-col items-end justify-center">
                                 <span className="inline-block text-7xl font-bold">
