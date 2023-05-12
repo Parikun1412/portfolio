@@ -5,7 +5,7 @@ import React, { useEffect, useRef } from "react";
 import AnimatedText from "../components/animated-text";
 import Layout from "../components/layout";
 import Image from "next/image";
-import profilePic from "../../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../../public/images/profile/code.png";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "../components/skills";
 import Experience from "../components/experience";
@@ -43,7 +43,7 @@ const AnimatedNumbers = ({ value }: Props) => {
 const About = () => {
     return (
         <>
-        <TransitionEffect />
+            <TransitionEffect />
             <main className="flex w-full flex-col items-center justify-center dark:text-light">
                 <Layout>
                     <AnimatedText
@@ -56,19 +56,18 @@ const About = () => {
                                 Biography
                             </h2>
                             <p className="font-medium">
-                                Hi, I&apos;m CodeBucks, a web developer and UI/UX designer with a passion for creating
-                                beautiful, functional, and user-centered digital experiences. With 4 years of experience
-                                in the field. I am always looking for new and innovative ways to bring my clients&apos;
-                                visions to life.
+                                Hi, I&apos;m Vu Ba Kiet, a passionate web development student who is eager to learn and
+                                create exciting web experiences. With a strong foundation in HTML, CSS, and JavaScript.
+                                I constantly exploring new technologies and best practices, and has experience working
+                                on a variety of projects both individually and in a team environment.
                             </p>
                             <p className="my-4 font-medium">
-                                I believe that design is about more than just making things look pretty – it&apos;s
-                                about solving problems and creating intuitive, enjoyable experiences for users.
+                                I constantly exploring new technologies and best practices, and has experience working
+                                on a variety of projects both individually and in a team environment.
                             </p>
                             <p className="font-medium">
-                                Whether I&apos;m working on a website, mobile app, or other digital product, I bring my
-                                commitment to design excellence and user-centered thinking to every project I work on. I
-                                look forward to the opportunity to bring my skills and passion to your next project.
+                                I&apos;m committed to delivering high-quality, user-friendly websites and is always
+                                seeking opportunities to enhance my skills and knowledge.
                             </p>
                         </div>
                         <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
@@ -94,13 +93,17 @@ const About = () => {
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                                     <AnimatedNumbers value={40} />+
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xl:text-sm">projects completed</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xl:text-sm">
+                                    projects completed
+                                </h2>
                             </div>
                             <div className="flex flex-col items-end justify-center xl:items-center">
                                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                                     <AnimatedNumbers value={4} />+
                                 </span>
-                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xl:text-sm">years of experience</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xl:text-sm">
+                                    years of experience
+                                </h2>
                             </div>
                         </div>
                     </div>

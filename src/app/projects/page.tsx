@@ -6,7 +6,7 @@ import AnimatedText from "../components/animated-text";
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 import { GithubIcon } from "../components/icons";
-import project1 from "../../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../../public/images/profile/code-1.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "../components/transition-effect";
 
@@ -109,58 +109,58 @@ const Projects = () => {
                                 title="Vu Kiet Food Website"
                                 summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="https://vukietfood.com/"
+                                githublink="https://github.com/vubakiet/homesite"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Featured Project"
-                                title="Vu Kiet Food Website"
-                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                title="Portfolio"
+                                summary="A feature-rich Portfolio Website using NextJS 13, Tailwind CSS, Frammer-motion for develop portfolio for myself."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="https://vubakiet.vercel.app/"
+                                githublink="https://github.com/vubakiet/portfolio"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Featured Project"
-                                title="Vu Kiet Food Website"
-                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                title="Ecommerce SGU"
+                                summary="A feature-rich Ecommerce Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="https://github.com/vubakiet/ecsgu"
+                                githublink="https://github.com/vubakiet/ecsgu"
                             />
                         </div>
                         <div className="col-span-12">
                             <FeaturedProject
                                 type="Featured Project"
-                                title="Vu Kiet Food Website"
-                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                title="Hotel-manager application"
+                                summary="A feature-rich an application for Hotel-manager using Java with Object Oriented Programing."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="https://github.com/vubakiet/hotel-management-oop"
+                                githublink="https://github.com/vubakiet/hotel-management-oop"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Featured Project"
-                                title="Vu Kiet Food Website"
-                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                title="Male-Fastion"
+                                summary="A feature-rich a Ecommerce Website using NextJS 12 and NodeJS for develop an Ecommerce Store to sell product."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="male-fashion-client-ui.vercel.app"
+                                githublink="https://github.com/thienv29/male-fashion-client-ui"
                             />
                         </div>
                         <div className="col-span-6 sm:col-span-12">
                             <Project
                                 type="Featured Project"
-                                title="Vu Kiet Food Website"
-                                summary="A feature-rich Vu Kiet Food Website using HTML, CSS, Javascript and PHP for develop Ecommerce Store to sell product."
+                                title="SGU-Community"
+                                summary="A feature-rich a Social Website using NextJS 13 and NestJS for develop a website community for school."
                                 img={project1}
-                                link="/"
-                                githublink="/"
+                                link="https://sgu-community.vercel.app/"
+                                githublink="https://github.com/thienv29/sgu-community-client"
                             />
                         </div>
                     </div>
